@@ -24,7 +24,7 @@ class App extends Component {
           <Switch>
             <Route exact path ='/'
               render={() => (
-                <h1>Hello World!</h1>
+                <QuoteArea/>
               )}
               />
           </Switch>
