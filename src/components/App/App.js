@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
+import Header from '../Header/Header'
 import './App.css'
 
 class App extends Component {
@@ -17,16 +18,17 @@ class App extends Component {
   render() {
     return (
 
-      <Switch>
-        <Route exact path ='/'
-          render={() => (
-                      <main className = 'App'>
-                      <h1>Hello World!</h1>
-                  </main>
-          )}
-          />
-      </Switch>
-
+      <main className = 'App'>
+        <Header/>
+          <Switch>
+            <Route exact path ='/'
+              render={() => (
+                <h1>Hello World!</h1>
+              )}
+              />
+          </Switch>
+      </main>
+         
     )
   }
 }
