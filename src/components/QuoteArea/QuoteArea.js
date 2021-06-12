@@ -5,7 +5,7 @@ import './QuoteArea.css'
 const QuoteArea = () => {
     return (
         <div className = 'Area'>
-            <QuoteCard/>
+            <QuoteCard />
         </div>
     )
 }
