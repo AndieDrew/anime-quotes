@@ -1,12 +1,13 @@
 import React from 'react'
-import { getQuote } from '../../util/api-calls'
 import './QuoteCard.css'
 
-const QuoteCard =() => {
-  getQuote()
+const QuoteCard =( props ) => {
+const { anime, character, quote } = props.animeQuote
     return (
       <div className='card'>
-        <h1>Future QuoteCard</h1>
+        <h1>{anime}</h1>
+        <h2>{quote}</h2>
+        <h2>- {character}</h2>
       </div>
     )
   }
