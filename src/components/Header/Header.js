@@ -7,6 +7,7 @@ const Header = () => {
         <span>
           <h1 className='pageTitle'>Anime Quotes</h1>
         </span>
+        <button className='favorites' >Favorites</button>
       </header>
     )
   }
