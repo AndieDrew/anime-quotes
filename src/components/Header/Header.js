@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
@@ -8,7 +8,9 @@ const Header = () => {
         <span>
           <h1 className='pageTitle'>Anime Quotes</h1>
         </span>
-        <button className='favorites' >Favorites</button>
+        <Link to='/favorites'>
+          <button className='favorites' >Favorites</button>
+        </Link>
       </header>
     )
   }
