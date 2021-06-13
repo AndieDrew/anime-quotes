@@ -10,6 +10,7 @@ class App extends Component {
     super()
     this.state = {
       animeQuote: null,
+      error: null
     }
   }
 
@@ -18,6 +19,7 @@ class App extends Component {
       .then(data => {
         this.setState({animeQuote: data})
       })
+      .catch(error => this.setState({error: error}))
   }
 
   render() {
@@ -28,8 +30,11 @@ class App extends Component {
           <Switch>
             <Route exact path ='/'
               render={() => (
-                !this.state.animeQuote ?
+                !this.state.animeQuote && !this.state.error ?
                 <h1 className='loading' >Loading</h1>
+
+                : this.state.error ?
+                <h1 className='error'>Something went wrong!</h1>
 
                 : this.state.animeQuote &&
                 <QuoteArea animeQuote={ this.state.animeQuote }/>
