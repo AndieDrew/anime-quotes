@@ -10,6 +10,12 @@ describe('Dashboard', () => {
           .get('.header > span > .pageTitle').contains('Anime Quotes')
     })
 
+
+    it('Should show a loading message before data is fetched', () => {
+        cy.visit('http://localhost:3000');
+        cy.get('.loading').should('be.visible')
+    })
+
     it('Should show a quote card with correct data', () => {
         cy.load()
         cy.get('.card').should('be.visible')
