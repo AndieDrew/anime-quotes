@@ -2,10 +2,10 @@ import React from 'react'
 import QuoteCard from '../QuoteCard/QuoteCard'
 import './QuoteArea.css'
 
-const QuoteArea = () => {
+const QuoteArea = ( {animeQuote} ) => {
     return (
         <div className = 'Area'>
-            <QuoteCard />
+            <QuoteCard animeQuote={animeQuote}/>
         </div>
     )
 }
