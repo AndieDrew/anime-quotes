@@ -1,7 +1,4 @@
 describe('Dashboard', () => {
-    beforeEach(() => {
-      
-    });
 
     it('Should show application title', () => {
         cy.load()
