@@ -29,7 +29,7 @@ class App extends Component {
             <Route exact path ='/'
               render={() => (
                 !this.state.animeQuote ?
-                <h1>Loading</h1>
+                <h1 className='loading' >Loading</h1>
 
                 : this.state.animeQuote &&
                 <QuoteArea animeQuote={ this.state.animeQuote }/>
