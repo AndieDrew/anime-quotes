@@ -5,12 +5,10 @@ import './Header.css'
 const Header = () => {
     return (
       <header className='header'>
-        <span>
           <h1 className='pageTitle'>Anime Quotes</h1>
-        </span>
-        <Link to='/favorites'>
-          <button className='favorites' >Favorites</button>
-        </Link>
+          <Link to='/favorites'>
+            <button className='favorites' >Favorites</button>
+          </Link>
       </header>
     )
   }
