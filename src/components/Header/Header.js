@@ -8,21 +8,21 @@ const Header = () => {
       <header className='header'>
           <h1 className='pageTitle'>Anime Quotes</h1>
           <ul className='nav-links'>
-        <li>
-          <NavLink
-            exact to='/'
-            activeClassName="active">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            exact to='/favorites'
-            activeClassName="active">
-            Favorites
-          </NavLink>
-        </li>
-      </ul>
+            <li>
+              <NavLink
+                exact to='/'
+                activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact to='/favorites'
+                activeClassName="active">
+                Favorites
+              </NavLink>
+            </li>
+          </ul>
       </header>
     )
   }
