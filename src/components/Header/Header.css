@@ -16,8 +16,7 @@
     padding-top: 1.5%;
   }
 
-.favorites {
-  /* z-index: 1; */
+a {
   margin: 30px;
   box-shadow:inset 0px 0px 0px 0px #e184f3;
   background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -26,7 +25,7 @@
   border:1px solid #a511c0;
   display:inline-block;
   cursor:pointer;
-  color:#ffffff;
+  color: whitesmoke;
   font-family:Arial;
   font-size:20px;
   font-weight:bold;
@@ -34,10 +33,14 @@
   text-shadow:0px 1px 0px #9b14b3;
 }
 
-.favorites:hover {
+.active {
+  color: aqua;
+}
+
+a:hover {
+  color: aqua;
   background-color:#a20dbd;
   box-shadow: -5px -5px 30px 10px rgba(49, 196, 190, 0.75),
-              5px 5px 30px 10px rgba(49, 196, 190, 0.75);
+                5px 5px 30px 10px rgba(49, 196, 190, 0.75);
   transform: scale(1.03);
-
 }

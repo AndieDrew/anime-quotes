@@ -1,14 +1,28 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
+
     return (
       <header className='header'>
           <h1 className='pageTitle'>Anime Quotes</h1>
-          <Link to='/favorites'>
-            <button className='favorites' >Favorites</button>
-          </Link>
+          <ul className='nav-links'>
+            <li>
+              <NavLink
+                exact to='/'
+                activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact to='/favorites'
+                activeClassName="active">
+                Favorites
+              </NavLink>
+            </li>
+          </ul>
       </header>
     )
   }

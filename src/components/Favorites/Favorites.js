@@ -3,13 +3,16 @@ import QuoteCard from '../QuoteCard/QuoteCard'
 import './Favorites.css'
 
 const Favorites = ( {favoritesArray} ) => {
-    const favoritesCards = favoritesArray.map(fave => {
+    const favoritesCards = favoritesArray.map((fave, index) => {
         return (
-            <QuoteCard animeQuote={fave}/>
+            <QuoteCard animeQuote={fave} key={index}/>
         )
     })
     return (
-        <div className='favoritesList' key='key'>
+        <div className='favoritesList'>
+            {!favoritesArray.length &&
+                <h1 className='noFavorites'>You have no favorites!</h1>
+            }
             {favoritesCards}
         </div>
     )
