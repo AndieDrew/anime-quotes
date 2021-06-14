@@ -1,23 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Favorites.css'
 
-class Favorites extends Component {
-    constructor() {
-      super()
-      this.state = {
-  
-      }
-    }
-  
-    componentDidMount() {
-  
-    }
-  
-    render() {
-      return (
-        <h1> PLACEHOLDER FOR FAVORITES </h1>
-      )
-    }
-  }
+const Favorites = ( {favoritesArray} ) => {
+
+    return (
+        <h1>PLACEHOLDER FAVE</h1>
+    )
+}
   
   export default Favorites
