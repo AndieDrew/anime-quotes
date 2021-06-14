@@ -9,21 +9,21 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      animeQuote: null,
+      animeQuote: 1,
       error: null
     }
   }
 
   componentDidMount() {
-    getQuote()
-      .then(data => {
-        this.setState({animeQuote: data})
-      })
-      .catch(error => this.setState({error: error}))
+    // getQuote()
+    //   .then(data => {
+    //     this.setState({animeQuote: data})
+    //   })
+    //   .catch(error => this.setState({error: error}))
   }
 
   newQuote() {
-    console.log("GET NEW QUOTE");
+   console.log("YEET");
   }
 
   render() {
