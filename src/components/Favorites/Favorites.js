@@ -3,9 +3,15 @@ import QuoteCard from '../QuoteCard/QuoteCard'
 import './Favorites.css'
 
 const Favorites = ( {favoritesArray} ) => {
-
+    const favoritesCards = favoritesArray.map(fave => {
+        return (
+            <QuoteCard animeQuote={fave}/>
+        )
+    })
     return (
-        <h1>PLACEHOLDER FAVE</h1>
+        <div className='favoritesList' key='key'>
+            {favoritesCards}
+        </div>
     )
 }
   
