@@ -55,7 +55,7 @@ class App extends Component {
               />
               <Route exact path ='/favorites'
               render={() => (
-                <Favorites />
+                <Favorites favoritesArray={ this.state.favorites }/>
               )}
               />
           </Switch>
