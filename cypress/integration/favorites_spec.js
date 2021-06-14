@@ -26,4 +26,18 @@ describe('Dashboard', () => {
           .get('.card > .animeCharacter').contains('- Natsu Dragneel')
     })
 
+    it('Should not have duplicate quotes', () => {
+        cy.load()
+          .get('.favoriteBtn').click()
+          .get('.favoriteBtn').click()
+          .get('.favoriteBtn').click()
+
+          .get('li').eq(1).click()
+          .get('.noFavorites').should('not.exist')
+          
+          .get('.card').eq(0).should('be.visible')
+          .get('.card').eq(1).should('not.exist')
+          .get('.card').eq(3).should('not.exist')
+          .get('.card').should('have.length', 1)
+    })
 });
