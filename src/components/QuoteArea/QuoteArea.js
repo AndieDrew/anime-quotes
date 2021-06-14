@@ -4,7 +4,7 @@ import './QuoteArea.css'
 
 const QuoteArea = ( {animeQuote} ) => {
     return (
-        <div className = 'Area'>
+        <div className = 'area'>
             <QuoteCard animeQuote={animeQuote}/>
         </div>
     )
