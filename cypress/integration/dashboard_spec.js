@@ -7,6 +7,14 @@ describe('Dashboard', () => {
           .get('.header > .pageTitle').contains('Anime Quotes')
     })
 
+    it('Should have correct buttons', () => {
+        cy.load()
+          .get('li').eq(0).contains('Home')
+          .get('li').eq(1).contains('Favorites')
+          .get('.newQuoteBtn').contains('New Quote')
+          .get('.favoriteBtn').contains('Favorite')
+    })
+
 
     it('Should show a loading message before data is fetched', () => {
         cy.visit('http://localhost:3000');
