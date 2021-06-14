@@ -1,0 +1,10 @@
+.favoritesList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
+    justify-content: center;
+    margin: 24px;
+    overflow: scroll;
+    grid-gap: 25px;
+}

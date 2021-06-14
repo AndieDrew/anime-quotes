@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Header from '../Header/Header'
 import QuoteArea from '../QuoteArea/QuoteArea'
+import Favorites from '../Favorites/Favorites'
 import { getQuote } from '../../util/api-calls'
 import './App.css'
 
@@ -10,6 +11,7 @@ class App extends Component {
     super()
     this.state = {
       animeQuote: null,
+      favorites: [],
       error: null
     }
   }
@@ -21,6 +23,13 @@ class App extends Component {
       })
       .catch(error => this.setState({error: error}))
   }
+
+  addToFavorites() {
+    if(!this.state.favorites.includes(this.state.animeQuote)){
+      this.setState({favorites: [...this.state.favorites, this.state.animeQuote]})
+    }
+  }
+
 
   render() {
     return (
@@ -37,7 +46,16 @@ class App extends Component {
                 <h1 className='error'>Something went wrong!</h1>
 
                 : this.state.animeQuote &&
-                <QuoteArea animeQuote={ this.state.animeQuote }/>
+                <div>
+                  <QuoteArea animeQuote={ this.state.animeQuote }/>
+                  <button className='newQuoteBtn' onClick={ () => this.componentDidMount()}>New Quote</button>
+                  <button className='favoriteBtn' onClick={ () => this.addToFavorites()}>Favorite</button>
+                </div>
+              )}
+              />
+              <Route exact path ='/favorites'
+              render={() => (
+                <Favorites favoritesArray={ this.state.favorites }/>
               )}
               />
           </Switch>
