@@ -39,17 +39,15 @@ a {
   color: rgb(13, 127, 227);
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 25px;
 }
 
 .active {
   color: whitesmoke;
 }
 
-.favorites:hover {
-  background-color:#a20dbd;
-  box-shadow: -5px -5px 30px 10px rgba(49, 196, 190, 0.75),
-              5px 5px 30px 10px rgba(49, 196, 190, 0.75);
-  transform: scale(1.03);
-
+a:hover {
+  color: aqua;
+  transform: scale(1.2);
+  border-radius: 25px;
 }
