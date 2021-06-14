@@ -10,6 +10,9 @@ const Favorites = ( {favoritesArray} ) => {
     })
     return (
         <div className='favoritesList'>
+            {!favoritesArray.length &&
+                <h1 className='noFavorites'>You have no favorites!</h1>
+            }
             {favoritesCards}
         </div>
     )
