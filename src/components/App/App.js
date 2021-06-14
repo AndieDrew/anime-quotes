@@ -48,6 +48,11 @@ class App extends Component {
                 </div>
               )}
               />
+              <Route exact path ='/favorites'
+              render={() => (
+                <Favorites />
+              )}
+              />
           </Switch>
       </main>
          
