@@ -37,7 +37,11 @@ class App extends Component {
                 <h1 className='error'>Something went wrong!</h1>
 
                 : this.state.animeQuote &&
-                <QuoteArea animeQuote={ this.state.animeQuote }/>
+                <div>
+                  <QuoteArea animeQuote={ this.state.animeQuote }/>
+                  <button className='newQuoteBtn' >New Quote</button>
+                  <button className='favoriteBtn' >Favorite</button>
+                </div>
               )}
               />
           </Switch>
