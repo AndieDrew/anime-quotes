@@ -9,6 +9,10 @@ describe('Dashboard', () => {
 
     it('Should have correct buttons', () => {
         cy.load()
+          .get('li').eq(0).should('be.visible')
+          .get('li').eq(1).should('be.visible')
+          .get('.newQuoteBtn').should('be.visible')
+          .get('.favoriteBtn').should('be.visible')
           .get('li').eq(0).contains('Home')
           .get('li').eq(1).contains('Favorites')
           .get('.newQuoteBtn').contains('New Quote')
