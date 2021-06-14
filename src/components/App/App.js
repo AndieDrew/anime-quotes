@@ -24,6 +24,12 @@ class App extends Component {
       .catch(error => this.setState({error: error}))
   }
 
+  addToFavorites() {
+    if(!this.state.favorites.includes(this.state.animeQuote)){
+      this.setState({favorites: [...this.state.favorites, this.state.animeQuote]})
+    }
+  }
+
 
   render() {
     return (
@@ -43,7 +49,7 @@ class App extends Component {
                 <div>
                   <QuoteArea animeQuote={ this.state.animeQuote }/>
                   <button className='newQuoteBtn' onClick={ () => this.componentDidMount()}>New Quote</button>
-                  <button className='favoriteBtn' >Favorite</button>
+                  <button className='favoriteBtn' onClick={ () => this.addToFavorites()}>Favorite</button>
                 </div>
               )}
               />
