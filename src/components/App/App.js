@@ -10,22 +10,19 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      animeQuote: 1,
+      animeQuote: null,
       error: null
     }
   }
 
   componentDidMount() {
-    // getQuote()
-    //   .then(data => {
-    //     this.setState({animeQuote: data})
-    //   })
-    //   .catch(error => this.setState({error: error}))
+    getQuote()
+      .then(data => {
+        this.setState({animeQuote: data})
+      })
+      .catch(error => this.setState({error: error}))
   }
 
-  newQuote() {
-   console.log("YEET");
-  }
 
   render() {
     return (
@@ -44,7 +41,7 @@ class App extends Component {
                 : this.state.animeQuote &&
                 <div>
                   <QuoteArea animeQuote={ this.state.animeQuote }/>
-                  <button className='newQuoteBtn' onClick={this.newQuote}>New Quote</button>
+                  <button className='newQuoteBtn' onClick={ () => this.componentDidMount()}>New Quote</button>
                   <button className='favoriteBtn' >Favorite</button>
                 </div>
               )}
