@@ -15,8 +15,7 @@ class Favorites extends Component {
   
     render() {
       return (
-  
-           
+        <h1> PLACEHOLDER FOR FAVORITES </h1>
       )
     }
   }
