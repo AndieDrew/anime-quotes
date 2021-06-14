@@ -22,6 +22,10 @@ class App extends Component {
       .catch(error => this.setState({error: error}))
   }
 
+  newQuote() {
+    console.log("GET NEW QUOTE");
+  }
+
   render() {
     return (
 
@@ -39,7 +43,7 @@ class App extends Component {
                 : this.state.animeQuote &&
                 <div>
                   <QuoteArea animeQuote={ this.state.animeQuote }/>
-                  <button className='newQuoteBtn' >New Quote</button>
+                  <button className='newQuoteBtn' onClick={this.newQuote}>New Quote</button>
                   <button className='favoriteBtn' >Favorite</button>
                 </div>
               )}
