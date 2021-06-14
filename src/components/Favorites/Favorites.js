@@ -1,4 +1,5 @@
 import React from 'react'
+import QuoteCard from '../QuoteCard/QuoteCard'
 import './Favorites.css'
 
 const Favorites = ( {favoritesArray} ) => {
