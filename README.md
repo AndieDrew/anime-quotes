@@ -60,7 +60,11 @@ After completing the steps above to clone the repo:
 
 ## Future Iterations
 
-
+- Icon on the quote cards that lets the user know the quote is currently a favorite.
+- A search bar on the favorites page to filter all of the favorites by anime or character name.
+- A new search page where user can type an Anime or Character name, click search and the API will fetch 10 random quotes that include the anime or character name.
+- Local Storage so user data persists and favorites aren't lost on reload.
+- The form where the user can create their own anime quotes.
 
 ## Credits
 #### Authors
