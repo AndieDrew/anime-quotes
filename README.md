@@ -15,11 +15,15 @@
 
 ## Overview
 
+With limited time and a niche audience being targeted the goal of this project was to produce an MVP demonstrating our React, Router, Asynchronous JavaScript and cypress skills with attention to user personas. I chose the Animechan API for my niche audience and tailored my application for the specific user personas. Anime Quotes is an application for anime fans who like quick, easy, intuitive access to their favorite anime quotes and usually use the application in the dark on mobile devices.
+
+Application is fully responsive and accessible.
 
 - Deployed [LINK](AnimeQuotes.surge.sh)
 - Project Spec [LINK](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
 ## Learning Goals
+
 
 
 ## Features
@@ -50,13 +54,8 @@ After completing the steps above to clone the repo:
 2. Click on an integration test and allow the test to run
 
 
-## Project Reflection and Learning Goals
-
-##### Andrew
-
-
-
 ## Future Iterations
+
 
 
 ## Credits
