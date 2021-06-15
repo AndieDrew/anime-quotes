@@ -11,4 +11,12 @@ const QuoteArea = ({ animeQuote }) => {
   )
 }
 
+QuoteArea.propTypes = {
+  animeQuote: PropTypes.shape({
+    anime: PropTypes.string.isRequired,
+    character: PropTypes.string.isRequired,
+    quote: PropTypes.string.isRequired
+  })
+}
+
 export default QuoteArea
