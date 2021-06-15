@@ -1,5 +1,6 @@
 import React from "react"
 import QuoteCard from "../QuoteCard/QuoteCard"
+import PropTypes from 'prop-types'
 import "./Favorites.css"
 
 const Favorites = ({ favoritesArray }) => {
@@ -14,6 +15,10 @@ const Favorites = ({ favoritesArray }) => {
       {favoritesCards}
     </div>
   )
+}
+
+Favorites.propTypes = {
+  favoritesArray: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Favorites
