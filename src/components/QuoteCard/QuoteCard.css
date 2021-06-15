@@ -1,10 +1,5 @@
 .card {
-    /* position: absolute;  */
-    /* left: 50%; */
-    /* top: 45%; */
-    /* transform: translate(-50%, -50%);  */
     background-color: #0D0D0D;
-    /* background-attachment: fixed; */
     color: whitesmoke;
     border-radius: 25px;;
     margin-top: 3%;
@@ -17,3 +12,15 @@
 ::-webkit-scrollbar { 
     display: none; /* Chrome Safari */
 }
+
+@media only screen and (max-width: 920px) {
+    .card {
+      width: 320px;
+    }
+
+    .animeTitle,
+    .animeQuote,
+    .animeCharacter {
+        font-size: 20px;
+    }
+  }
