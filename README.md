@@ -25,8 +25,10 @@ No warnings or Errors locally
 ![Screen Shot 2021-06-14 at 11 07 59 PM](https://user-images.githubusercontent.com/27929330/121986876-5f592200-cd65-11eb-9309-c8817182d95e.png)
 
 - Deployed [LINK](https://animequotes.surge.sh/)
+- Repository [LINK](https://github.com/AndieDrew/anime-quotes)
 - Project Spec [LINK](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 - API [LINK](https://animechan.vercel.app/)
+- WireFrame, User Personas, MVP, Insporation [MiroBoard](https://miro.com/app/board/o9J_l_rN5AE=/)
 
 
 ## Learning Goals
