@@ -4,7 +4,6 @@ import Header from "../Header/Header"
 import QuoteArea from "../QuoteArea/QuoteArea"
 import Favorites from "../Favorites/Favorites"
 import { getQuote } from "../../util/api-calls"
-import PropTypes from 'prop-types'
 import "./App.css"
 
 class App extends Component {
@@ -76,15 +75,6 @@ class App extends Component {
       </main>
     )
   }
-}
-
-App.propTypes = {
-  animeQuote: PropTypes.shape({
-    anime: PropTypes.string.isRequired,
-    character: PropTypes.string.isRequired,
-    quote: PropTypes.string.isRequired
-  }),
-  favoritesArray: PropTypes.array
 }
 
 export default App;
