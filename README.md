@@ -95,5 +95,5 @@ After completing the steps above to clone the repo:
 
 **************************************************************************
 This project was created for [Turing School of Software and Design](https://turing.io/)
-##### 2021/06/07
+##### 06/14/2021
 **[Back to top](#table-of-contents)**
