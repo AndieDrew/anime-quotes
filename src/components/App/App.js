@@ -1,27 +1,27 @@
-import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
-import Header from "../Header/Header";
-import QuoteArea from "../QuoteArea/QuoteArea";
-import Favorites from "../Favorites/Favorites";
-import { getQuote } from "../../util/api-calls";
-import "./App.css";
+import React, { Component } from "react"
+import { Switch, Route } from "react-router-dom"
+import Header from "../Header/Header"
+import QuoteArea from "../QuoteArea/QuoteArea"
+import Favorites from "../Favorites/Favorites"
+import { getQuote } from "../../util/api-calls"
+import "./App.css"
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       animeQuote: null,
       favorites: [],
       error: null,
-    };
+    }
   }
 
   componentDidMount() {
     getQuote()
       .then((data) => {
-        this.setState({ animeQuote: data });
+        this.setState({ animeQuote: data })
       })
-      .catch((error) => this.setState({ error: error }));
+      .catch((error) => this.setState({ error: error }))
   }
 
   addToFavorites() {
@@ -73,7 +73,7 @@ class App extends Component {
           />
         </Switch>
       </main>
-    );
+    )
   }
 }
 
