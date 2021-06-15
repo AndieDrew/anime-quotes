@@ -18,6 +18,12 @@ With limited time and a niche audience being targeted the goal of this project w
 
 Application is fully responsive and accessible.
 
+![Screen Shot 2021-06-14 at 11 06 41 PM](https://user-images.githubusercontent.com/27929330/121986808-3173dd80-cd65-11eb-9165-a6a4bab53a69.png)
+
+No warnings or Errors locally
+
+![Screen Shot 2021-06-14 at 11 07 59 PM](https://user-images.githubusercontent.com/27929330/121986876-5f592200-cd65-11eb-9309-c8817182d95e.png)
+
 - Deployed [LINK](AnimeQuotes.surge.sh)
 - Project Spec [LINK](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
@@ -32,6 +38,10 @@ Application is fully responsive and accessible.
 ## Features
 
 On application launch, the user will be greeted with a random anime quote with the anime and character name. The user can click the 'New Quote' button to generate a new quote, or click the 'Favorite' button to add the current quote to a list of favorites. User can navigate to the Favorites page by clicking the 'Favorites' button at the top right of the screen so they can view a list of all their favorite quotes. User can navigate back to the home page by clicking the 'Home' button at the top right of the screen.
+
+![Screen Shot 2021-06-14 at 11 09 00 PM](https://user-images.githubusercontent.com/27929330/121986952-8283d180-cd65-11eb-8f5a-db4869d08aff.png)
+
+![Screen Shot 2021-06-14 at 11 09 18 PM](https://user-images.githubusercontent.com/27929330/121986973-8dd6fd00-cd65-11eb-9df0-2deb117bf6b9.png)
 
 ## Technologies Used
 * ![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)
