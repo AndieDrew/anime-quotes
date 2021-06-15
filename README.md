@@ -26,6 +26,8 @@ No warnings or Errors locally
 
 - Deployed [LINK](https://animequotes.surge.sh/)
 - Project Spec [LINK](https://frontend.turing.edu/projects/module-3/niche-audience.html)
+- API [LINK](https://animechan.vercel.app/)
+
 
 ## Learning Goals
 
