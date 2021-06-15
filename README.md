@@ -24,6 +24,7 @@
 
 ## Features
 
+On application launch, the user will be greeted with a random anime quote with the anime and character name. The user can click the 'New Quote' button to generate a new quote, or click the 'Favorite' button to add the current quote to a list of favorites. User can navigate to the Favorites page by clicking the 'Favorites' button at the top right of the screen so they can view a list of all their favorite quotes. User can navigate back to the home page by clicking the 'Home' button at the top right of the screen.
 
 ## Technologies Used
 * ![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)
