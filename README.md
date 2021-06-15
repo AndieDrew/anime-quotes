@@ -24,7 +24,7 @@ No warnings or Errors locally
 
 ![Screen Shot 2021-06-14 at 11 07 59 PM](https://user-images.githubusercontent.com/27929330/121986876-5f592200-cd65-11eb-9309-c8817182d95e.png)
 
-- Deployed [LINK](AnimeQuotes.surge.sh)
+- Deployed [LINK](https://animequotes.surge.sh/)
 - Project Spec [LINK](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
 ## Learning Goals
