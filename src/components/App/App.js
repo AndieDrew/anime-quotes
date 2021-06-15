@@ -78,4 +78,12 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+  animeQuote: PropTypes.shape({
+    anime: PropTypes.string.isRequired,
+    character: PropTypes.string.isRequired,
+    quote: PropTypes.string.isRequired
+  }),
+}
+
 export default App;
