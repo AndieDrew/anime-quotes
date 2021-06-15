@@ -17,4 +17,8 @@ const Favorites = ({ favoritesArray }) => {
   )
 }
 
+Favorites.propTypes = {
+  favoritesArray: PropTypes.arrayOf(PropTypes.object)
+}
+
 export default Favorites
