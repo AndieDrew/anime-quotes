@@ -84,6 +84,7 @@ App.propTypes = {
     character: PropTypes.string.isRequired,
     quote: PropTypes.string.isRequired
   }),
+  favoritesArray: PropTypes.array
 }
 
 export default App;
