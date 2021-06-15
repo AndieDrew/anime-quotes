@@ -12,3 +12,10 @@
 ::-webkit-scrollbar { 
     display: none; /* Chrome Safari */
 }
+
+@media only screen and (max-width: 920px) {
+    .card {
+      width: 320px;
+    }
+
+  }
