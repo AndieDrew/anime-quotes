@@ -44,3 +44,9 @@ a:hover {
                 5px 5px 30px 10px rgba(49, 196, 190, 0.75);
   transform: scale(1.03);
 }
+
+@media only screen and (max-width: 980px) {
+  .pageTitle {
+    font-size: 40px;
+  }
+}
