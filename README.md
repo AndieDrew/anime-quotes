@@ -24,7 +24,11 @@ Application is fully responsive and accessible.
 
 ## Learning Goals
 
-
+- Refine React, Router, Asynchronous Javascript, Cypress testing skills with best practices.
+- Implement TypeChecking with PropTypes.
+- Refine project management skills and professionalism by having an organized project board, descriptive PR's, atomic commits that accurately track the progression of the project, and a thorough README.
+- Demonstrate attention to detail with accessability and responsiveness.
+- Learn to tailer an application to a very specific audience.
 
 ## Features
 
