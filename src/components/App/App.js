@@ -4,6 +4,7 @@ import Header from "../Header/Header"
 import QuoteArea from "../QuoteArea/QuoteArea"
 import Favorites from "../Favorites/Favorites"
 import { getQuote } from "../../util/api-calls"
+import PropTypes from 'prop-types'
 import "./App.css"
 
 class App extends Component {
